@@ -1,6 +1,8 @@
+require('dotenv').config();
+
 const express = require('express'),
     server = express();
 
-server.listen(3000, () => {
-    console.log("server rodando");
+server.listen(process.env.port, () => {
+    console.log(`server rodando na porta ${process.env.port}`);
 });
