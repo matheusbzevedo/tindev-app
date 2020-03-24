@@ -22,6 +22,6 @@ const DevSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'Dev'
     }]
-});
+}, {timestamps: true});
 
 module.exports = model('Dev', DevSchema);
